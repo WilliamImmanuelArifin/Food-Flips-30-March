@@ -33,7 +33,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-  background-color: #ffffff;
+  background-color: #333;
   padding: 1rem 2rem;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar a {
-  color: #4b4b4b;
+  color: #ccc;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
