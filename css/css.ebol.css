@@ -56,41 +56,24 @@ button {
 }
 
 
-.footer {
-  background-color: #7f9c73;
-  color: white;
-  padding: 60px 10%;
-}
-
-.footer-container {
+.footer-block {
+  background-color: rgb(136, 207, 136);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.footer-menu h3,
-.footer-location h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+
+.buttons-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.footer-menu ul {
-  list-style: none;
-  padding: 0;
-}
 
-.footer-menu ul li {
-  margin-bottom: 10px;
-}
-
-.footer-menu ul li a {
+.location-right {
   color: white;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.footer-location p {
-  max-width: 350px;
-  line-height: 1.6;
-  font-size: 18px;
+  font-size: 1.2em;
 }
