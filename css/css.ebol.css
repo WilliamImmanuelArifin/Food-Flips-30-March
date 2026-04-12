@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: "Georgia", serif;
-  line-height: 1.6;
+  font-family: "Arial Black", Gadget, sans-serif; 
+  line-height: 1.4;
+  color: #333;
 }
 
 .banner {
@@ -15,91 +16,88 @@ body {
   display: block;
 }
 
-h1 {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 40px 0;
-  text-decoration: underline;
-  text-underline-offset: 12px;
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.about-section {
+.about-container {
+  padding: 40px 5%;
+}
+
+.about-flex {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.about-text-box {
+  flex: 1;
+  background-color: #8ea97c;
+  padding: 30px;
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  padding: 80px 10%;
-  background-color: #8ea97c;
-  color: white;
 }
 
-.about-section h3 {
-  flex: 1;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-  text-decoration: underline;
+.about-text-box p {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
 }
 
 .about-image {
   flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 420px;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 6px;
 }
 
 .more-about {
+  padding: 20px 5%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 10%;
-  gap: 40px;
+  gap: 30px;
 }
 
-.read-more {
-  font-size: 1.5rem;
-  padding: 15px 30px;
-  background-color: #7f9c73;
+.read-btn {
+  background-color: #b8d2a8;
   color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+  padding: 10px 40px;
   text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-.read-more:hover {
-  background-color: #6a8a62;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .brands-section {
-  padding: 80px 10%;
+  padding: 40px 5%;
   text-align: center;
+}
+
+.brand-title {
+  color: #1a3a5f; 
+  font-family: "Arial Black", sans-serif;
+  margin-bottom: 30px;
 }
 
 .brands-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  gap: 15px;
+  flex-wrap: wrap; 
 }
 
 .brands-grid img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 8px;
-  transition: transform 0.3s;
+  background-color: #b8d2a8; 
+  width: 180px;             
+  height: 180px;
+  object-fit: contain;       
+  padding: 20px;             
+  transition: transform 0.2s ease;
 }
 
 .brands-grid img:hover {
@@ -109,72 +107,52 @@ h1 {
 .footer-block {
   background-color: #7f9c73;
   color: white;
-  padding: 60px 10%;
-  margin-top: 40px;
+  padding: 40px 5%;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
 }
 
-.footer-menu h3,
-.footer-location h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+.footer-menu h3, .footer-location h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .footer-menu ul {
   list-style: none;
-  padding: 0;
-}
-
-.footer-menu ul li {
-  margin-bottom: 10px;
 }
 
 .footer-menu ul li a {
   color: white;
   text-decoration: underline;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
-.footer-menu ul li a:hover {
-  color: #e5e5e5;
+.footer-location {
+  text-align: right;
 }
 
-.footer-location p {
-  max-width: 350px;
-  line-height: 1.6;
-  font-size: 18px;
-  margin-bottom: 10px;
+.location-details {
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .about-section {
+  .about-flex {
     flex-direction: column;
-    padding: 40px 5%;
-    gap: 30px;
   }
-  
-  .more-about {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 5%;
-  }
-  
   .brands-grid {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
   .footer-container {
     flex-direction: column;
     gap: 30px;
-    text-align: center;
+  }
+  .footer-location {
+    text-align: left;
   }
 }
